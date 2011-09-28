@@ -1,0 +1,524 @@
+[Wed, 28 Sep 2011 22:56:13 +0000] INFO: *** Chef 0.10.4 ***
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: Loading plugin os
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: Loading plugin kernel
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: Loading plugin ruby
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: Loading plugin languages
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: ---- Begin ruby -e "require 'rbconfig'; puts %Q(target_os=#{::Config::CONFIG['target_os']},host_cpu=#{::Config::CONFIG['host_cpu']},target=#{::Config::CONFIG['target']},host_vendor=#{::Config::CONFIG['host_vendor']},host=#{::Config::CONFIG['host']},release_date=#{RUBY_RELEASE_DATE},ruby_bin=#{::File.join(::Config::CONFIG['bindir'], ::Config::CONFIG['ruby_install_name'])},target_cpu=#{::Config::CONFIG['target_cpu']},host_os=#{::Config::CONFIG['host_os']},version=#{RUBY_VERSION},platform=#{RUBY_PLATFORM},bin_dir=#{::Config::CONFIG['bindir']},target_vendor=#{::Config::CONFIG['target_vendor']},)" STDOUT ----
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: target_os=linux,host_cpu=x86_64,target=x86_64-pc-linux-gnu,host_vendor=pc,host=x86_64-pc-linux-gnu,release_date=2010-01-10,ruby_bin=/usr/bin/ruby1.8,target_cpu=x86_64,host_os=linux-gnu,version=1.8.7,platform=x86_64-linux,bin_dir=/usr/bin,target_vendor=pc,
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: ---- End ruby -e "require 'rbconfig'; puts %Q(target_os=#{::Config::CONFIG['target_os']},host_cpu=#{::Config::CONFIG['host_cpu']},target=#{::Config::CONFIG['target']},host_vendor=#{::Config::CONFIG['host_vendor']},host=#{::Config::CONFIG['host']},release_date=#{RUBY_RELEASE_DATE},ruby_bin=#{::File.join(::Config::CONFIG['bindir'], ::Config::CONFIG['ruby_install_name'])},target_cpu=#{::Config::CONFIG['target_cpu']},host_os=#{::Config::CONFIG['host_os']},version=#{RUBY_VERSION},platform=#{RUBY_PLATFORM},bin_dir=#{::Config::CONFIG['bindir']},target_vendor=#{::Config::CONFIG['target_vendor']},)" STDOUT ----
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: ---- Begin ruby -e "require 'rbconfig'; puts %Q(target_os=#{::Config::CONFIG['target_os']},host_cpu=#{::Config::CONFIG['host_cpu']},target=#{::Config::CONFIG['target']},host_vendor=#{::Config::CONFIG['host_vendor']},host=#{::Config::CONFIG['host']},release_date=#{RUBY_RELEASE_DATE},ruby_bin=#{::File.join(::Config::CONFIG['bindir'], ::Config::CONFIG['ruby_install_name'])},target_cpu=#{::Config::CONFIG['target_cpu']},host_os=#{::Config::CONFIG['host_os']},version=#{RUBY_VERSION},platform=#{RUBY_PLATFORM},bin_dir=#{::Config::CONFIG['bindir']},target_vendor=#{::Config::CONFIG['target_vendor']},)" STDERR ----
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: 
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: ---- End ruby -e "require 'rbconfig'; puts %Q(target_os=#{::Config::CONFIG['target_os']},host_cpu=#{::Config::CONFIG['host_cpu']},target=#{::Config::CONFIG['target']},host_vendor=#{::Config::CONFIG['host_vendor']},host=#{::Config::CONFIG['host']},release_date=#{RUBY_RELEASE_DATE},ruby_bin=#{::File.join(::Config::CONFIG['bindir'], ::Config::CONFIG['ruby_install_name'])},target_cpu=#{::Config::CONFIG['target_cpu']},host_os=#{::Config::CONFIG['host_os']},version=#{RUBY_VERSION},platform=#{RUBY_PLATFORM},bin_dir=#{::Config::CONFIG['bindir']},target_vendor=#{::Config::CONFIG['target_vendor']},)" STDERR ----
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: Ran  (ruby -e "require 'rbconfig'; puts %Q(target_os=#{::Config::CONFIG['target_os']},host_cpu=#{::Config::CONFIG['host_cpu']},target=#{::Config::CONFIG['target']},host_vendor=#{::Config::CONFIG['host_vendor']},host=#{::Config::CONFIG['host']},release_date=#{RUBY_RELEASE_DATE},ruby_bin=#{::File.join(::Config::CONFIG['bindir'], ::Config::CONFIG['ruby_install_name'])},target_cpu=#{::Config::CONFIG['target_cpu']},host_os=#{::Config::CONFIG['host_os']},version=#{RUBY_VERSION},platform=#{RUBY_PLATFORM},bin_dir=#{::Config::CONFIG['bindir']},target_vendor=#{::Config::CONFIG['target_vendor']},)") returned 0
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: ---- Begin ruby -e "require 'rbconfig'; puts %x{/usr/bin/ruby1.8 /usr/bin/gem env gemdir}.chomp!" STDOUT ----
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: /usr/lib/ruby/gems/1.8
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: ---- End ruby -e "require 'rbconfig'; puts %x{/usr/bin/ruby1.8 /usr/bin/gem env gemdir}.chomp!" STDOUT ----
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: ---- Begin ruby -e "require 'rbconfig'; puts %x{/usr/bin/ruby1.8 /usr/bin/gem env gemdir}.chomp!" STDERR ----
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: 
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: ---- End ruby -e "require 'rbconfig'; puts %x{/usr/bin/ruby1.8 /usr/bin/gem env gemdir}.chomp!" STDERR ----
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: Ran  (ruby -e "require 'rbconfig'; puts %x{/usr/bin/ruby1.8 /usr/bin/gem env gemdir}.chomp!") returned 0
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: ---- Begin uname -s STDOUT ----
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: Linux
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: ---- End uname -s STDOUT ----
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: ---- Begin uname -s STDERR ----
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: 
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: ---- End uname -s STDERR ----
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: Ran  (uname -s) returned 0
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: ---- Begin uname -r STDOUT ----
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: 2.6.32-308-ec2
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: ---- End uname -r STDOUT ----
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: ---- Begin uname -r STDERR ----
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: 
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: ---- End uname -r STDERR ----
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: Ran  (uname -r) returned 0
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: ---- Begin uname -v STDOUT ----
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: #15-Ubuntu SMP Thu Aug 19 04:03:34 UTC 2010
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: ---- End uname -v STDOUT ----
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: ---- Begin uname -v STDERR ----
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: 
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: ---- End uname -v STDERR ----
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: Ran  (uname -v) returned 0
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: ---- Begin uname -m STDOUT ----
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: x86_64
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: ---- End uname -m STDOUT ----
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: ---- Begin uname -m STDERR ----
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: 
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: ---- End uname -m STDERR ----
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: Ran  (uname -m) returned 0
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: Loading plugin dmi
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: Loading plugin keys
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: Loading plugin perl
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: ---- Begin perl -V:version -V:archname STDOUT ----
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: version='5.10.1';
+archname='x86_64-linux-gnu-thread-multi';
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: ---- End perl -V:version -V:archname STDOUT ----
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: ---- Begin perl -V:version -V:archname STDERR ----
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: 
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: ---- End perl -V:version -V:archname STDERR ----
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: Ran  (perl -V:version -V:archname) returned 0
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: Loading plugin network_listeners
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: Plugin network_listeners threw exception #<LoadError: no such file to load -- sigar> /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/plugins/network_listeners.rb:19:in `from_file'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/system.rb:190:in `require_plugin'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/system.rb:185:in `each'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/system.rb:185:in `require_plugin'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/system.rb:117:in `all_plugins'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/system.rb:110:in `each'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/system.rb:110:in `all_plugins'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/system.rb:108:in `each'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/system.rb:108:in `all_plugins'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/client.rb:208:in `run_ohai'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/client.rb:149:in `run'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/application/client.rb:239:in `run_application'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/application/client.rb:229:in `loop'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/application/client.rb:229:in `run_application'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/application.rb:67:in `run'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/chef-client:26
+/usr/bin/chef-client:19:in `load'
+/usr/bin/chef-client:19
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: Loading plugin mono
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: Plugin mono threw exception #<Ohai::Exceptions::Exec: command mono -V doesn't exist or is not in the PATH> /usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/mixin/command.rb:312:in `popen4'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/mixin/command.rb:97:in `run_command_backend'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/mixin/command.rb:49:in `run_command'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/mixin/command.rb:48:in `chdir'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/mixin/command.rb:48:in `run_command'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/plugins/mono.rb:27:in `from_file'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/system.rb:190:in `require_plugin'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/system.rb:185:in `each'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/system.rb:185:in `require_plugin'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/system.rb:117:in `all_plugins'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/system.rb:110:in `each'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/system.rb:110:in `all_plugins'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/system.rb:108:in `each'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/system.rb:108:in `all_plugins'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/client.rb:208:in `run_ohai'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/client.rb:149:in `run'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/application/client.rb:239:in `run_application'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/application/client.rb:229:in `loop'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/application/client.rb:229:in `run_application'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/application.rb:67:in `run'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/chef-client:26
+/usr/bin/chef-client:19:in `load'
+/usr/bin/chef-client:19
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: Loading plugin java
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: Plugin java threw exception #<Ohai::Exceptions::Exec: command java -version doesn't exist or is not in the PATH> /usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/mixin/command.rb:312:in `popen4'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/mixin/command.rb:97:in `run_command_backend'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/mixin/command.rb:49:in `run_command'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/mixin/command.rb:48:in `chdir'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/mixin/command.rb:48:in `run_command'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/plugins/java.rb:24:in `from_file'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/system.rb:190:in `require_plugin'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/system.rb:185:in `each'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/system.rb:185:in `require_plugin'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/system.rb:117:in `all_plugins'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/system.rb:110:in `each'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/system.rb:110:in `all_plugins'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/system.rb:108:in `each'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/system.rb:108:in `all_plugins'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/client.rb:208:in `run_ohai'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/client.rb:149:in `run'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/application/client.rb:239:in `run_application'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/application/client.rb:229:in `loop'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/application/client.rb:229:in `run_application'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/application.rb:67:in `run'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/chef-client:26
+/usr/bin/chef-client:19:in `load'
+/usr/bin/chef-client:19
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: Loading plugin erlang
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: Plugin erlang threw exception #<Ohai::Exceptions::Exec: command erl +V doesn't exist or is not in the PATH> /usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/mixin/command.rb:312:in `popen4'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/mixin/command.rb:97:in `run_command_backend'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/mixin/command.rb:49:in `run_command'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/mixin/command.rb:48:in `chdir'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/mixin/command.rb:48:in `run_command'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/plugins/erlang.rb:26:in `from_file'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/system.rb:190:in `require_plugin'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/system.rb:185:in `each'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/system.rb:185:in `require_plugin'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/system.rb:117:in `all_plugins'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/system.rb:110:in `each'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/system.rb:110:in `all_plugins'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/system.rb:108:in `each'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/system.rb:108:in `all_plugins'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/client.rb:208:in `run_ohai'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/client.rb:149:in `run'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/application/client.rb:239:in `run_application'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/application/client.rb:229:in `loop'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/application/client.rb:229:in `run_application'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/application.rb:67:in `run'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/chef-client:26
+/usr/bin/chef-client:19:in `load'
+/usr/bin/chef-client:19
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: Loading plugin python
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: ---- Begin python -c "import sys; print sys.version" STDOUT ----
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: 2.6.5 (r265:79063, Apr 16 2010, 13:57:41) 
+[GCC 4.4.3]
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: ---- End python -c "import sys; print sys.version" STDOUT ----
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: ---- Begin python -c "import sys; print sys.version" STDERR ----
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: 
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: ---- End python -c "import sys; print sys.version" STDERR ----
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: Ran  (python -c "import sys; print sys.version") returned 0
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: Loading plugin hostname
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: Loading plugin linux::hostname
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: ---- Begin hostname -s STDOUT ----
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: ip-10-40-69-16
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: ---- End hostname -s STDOUT ----
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: ---- Begin hostname -s STDERR ----
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: 
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: ---- End hostname -s STDERR ----
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: Ran  (hostname -s) returned 0
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: ---- Begin hostname --fqdn STDOUT ----
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: ip-10-40-69-16.ec2.internal
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: ---- End hostname --fqdn STDOUT ----
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: ---- Begin hostname --fqdn STDERR ----
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: 
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: ---- End hostname --fqdn STDERR ----
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: Ran  (hostname --fqdn) returned 0
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: Loading plugin passwd
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: Loading plugin ohai_time
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: Loading plugin groovy
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: Plugin groovy threw exception #<Ohai::Exceptions::Exec: command groovy -v doesn't exist or is not in the PATH> /usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/mixin/command.rb:312:in `popen4'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/mixin/command.rb:97:in `run_command_backend'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/mixin/command.rb:49:in `run_command'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/mixin/command.rb:48:in `chdir'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/mixin/command.rb:48:in `run_command'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/plugins/groovy.rb:27:in `from_file'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/system.rb:190:in `require_plugin'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/system.rb:185:in `each'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/system.rb:185:in `require_plugin'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/system.rb:117:in `all_plugins'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/system.rb:110:in `each'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/system.rb:110:in `all_plugins'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/system.rb:108:in `each'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/system.rb:108:in `all_plugins'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/client.rb:208:in `run_ohai'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/client.rb:149:in `run'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/application/client.rb:239:in `run_application'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/application/client.rb:229:in `loop'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/application/client.rb:229:in `run_application'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/application.rb:67:in `run'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/chef-client:26
+/usr/bin/chef-client:19:in `load'
+/usr/bin/chef-client:19
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: Loading plugin platform
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: Loading plugin linux::platform
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: Loading plugin linux::lsb
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: Loading plugin virtualization
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: Loading plugin linux::virtualization
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: Loading plugin ec2
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: Loading plugin network
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: Loading plugin linux::network
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: ---- Begin route -n | grep -m 1 ^0.0.0.0 STDOUT ----
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: 0.0.0.0         10.40.69.1      0.0.0.0         UG    100    0        0 eth0
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: ---- End route -n | grep -m 1 ^0.0.0.0 STDOUT ----
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: ---- Begin route -n | grep -m 1 ^0.0.0.0 STDERR ----
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: 
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: ---- End route -n | grep -m 1 ^0.0.0.0 STDERR ----
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: Ran  (route -n | grep -m 1 ^0.0.0.0) returned 0
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: Using default interface for default ip and mac address
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: has_ec2_mac? == true
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: can_metadata_connect? == true
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: looks_like_ec2? == true
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: Loading plugin eucalyptus
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: Plugin eucalyptus threw exception #<NoMethodError: undefined method `detect' for nil:NilClass> /usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/plugins/eucalyptus.rb:31:in `get_mac_address'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/plugins/eucalyptus.rb:41:in `has_euca_mac?'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/plugins/eucalyptus.rb:40:in `each'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/plugins/eucalyptus.rb:40:in `has_euca_mac?'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/plugins/eucalyptus.rb:53:in `looks_like_euca?'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/plugins/eucalyptus.rb:56:in `from_file'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/system.rb:190:in `require_plugin'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/system.rb:185:in `each'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/system.rb:185:in `require_plugin'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/system.rb:117:in `all_plugins'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/system.rb:110:in `each'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/system.rb:110:in `all_plugins'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/system.rb:108:in `each'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/system.rb:108:in `all_plugins'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/client.rb:208:in `run_ohai'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/client.rb:149:in `run'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/application/client.rb:239:in `run_application'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/application/client.rb:229:in `loop'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/application/client.rb:229:in `run_application'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/application.rb:67:in `run'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/chef-client:26
+/usr/bin/chef-client:19:in `load'
+/usr/bin/chef-client:19
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: Loading plugin chef
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: Loading plugin dmi_common
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: Loading plugin c
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: ---- Begin gcc -v STDOUT ----
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: 
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: ---- End gcc -v STDOUT ----
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: ---- Begin gcc -v STDERR ----
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: Using built-in specs.
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 4.4.3-4ubuntu5' --with-bugurl=file:///usr/share/doc/gcc-4.4/README.Bugs --enable-languages=c,c++,fortran,objc,obj-c++ --prefix=/usr --enable-shared --enable-multiarch --enable-linker-build-id --with-system-zlib --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --with-gxx-include-dir=/usr/include/c++/4.4 --program-suffix=-4.4 --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-plugin --enable-objc-gc --disable-werror --with-arch-32=i486 --with-tune=generic --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+gcc version 4.4.3 (Ubuntu 4.4.3-4ubuntu5)
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: ---- End gcc -v STDERR ----
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: Ran  (gcc -v) returned 0
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: ---- Begin /lib/libc.so.6 STDOUT ----
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: GNU C Library (Ubuntu EGLIBC 2.11.1-0ubuntu7.8) stable release version 2.11.1, by Roland McGrath et al.
+Copyright (C) 2009 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.
+There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A
+PARTICULAR PURPOSE.
+Compiled by GNU CC version 4.4.3.
+Compiled on a Linux >>2.6.24-27-server<< system on 2011-01-21.
+Available extensions:
+	crypt add-on version 2.1 by Michael Glad and others
+	GNU Libidn by Simon Josefsson
+	Native POSIX Threads Library by Ulrich Drepper et al
+	BIND-8.2.3-T5B
+For bug reporting instructions, please see:
+<http://www.debian.org/Bugs/>.
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: ---- End /lib/libc.so.6 STDOUT ----
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: ---- Begin /lib/libc.so.6 STDERR ----
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: 
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: ---- End /lib/libc.so.6 STDERR ----
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: Ran  (/lib/libc.so.6) returned 0
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: ---- Begin cl /? STDOUT ----
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: 
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: ---- End cl /? STDOUT ----
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: ---- Begin cl /? STDERR ----
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: sh: cl: not found
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: ---- End cl /? STDERR ----
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: Ran  (cl /?) returned 127
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: ---- Begin devenv.com /? STDOUT ----
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: 
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: ---- End devenv.com /? STDOUT ----
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: ---- Begin devenv.com /? STDERR ----
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: sh: devenv.com: not found
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: ---- End devenv.com /? STDERR ----
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: Ran  (devenv.com /?) returned 127
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: Plugin c threw exception #<Ohai::Exceptions::Exec: command xlc -qversion doesn't exist or is not in the PATH> /usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/mixin/command.rb:312:in `popen4'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/mixin/command.rb:97:in `run_command_backend'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/mixin/command.rb:49:in `run_command'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/mixin/command.rb:48:in `chdir'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/mixin/command.rb:48:in `run_command'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/plugins/c.rb:77:in `from_file'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/system.rb:190:in `require_plugin'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/system.rb:185:in `each'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/system.rb:185:in `require_plugin'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/system.rb:117:in `all_plugins'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/system.rb:110:in `each'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/system.rb:110:in `all_plugins'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/system.rb:108:in `each'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/system.rb:108:in `all_plugins'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/client.rb:208:in `run_ohai'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/client.rb:149:in `run'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/application/client.rb:239:in `run_application'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/application/client.rb:229:in `loop'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/application/client.rb:229:in `run_application'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/application.rb:67:in `run'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/chef-client:26
+/usr/bin/chef-client:19:in `load'
+/usr/bin/chef-client:19
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: Loading plugin ip_scopes
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: ip_scopes: cannot load gem, plugin disabled: no such file to load -- ipaddr_extensions
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: Loading plugin cloud
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: Loading plugin rackspace
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: Loading plugin lua
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: Plugin lua threw exception #<Ohai::Exceptions::Exec: command lua -v doesn't exist or is not in the PATH> /usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/mixin/command.rb:312:in `popen4'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/mixin/command.rb:97:in `run_command_backend'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/mixin/command.rb:49:in `run_command'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/mixin/command.rb:48:in `chdir'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/mixin/command.rb:48:in `run_command'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/plugins/lua.rb:27:in `from_file'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/system.rb:190:in `require_plugin'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/system.rb:185:in `each'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/system.rb:185:in `require_plugin'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/system.rb:117:in `all_plugins'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/system.rb:110:in `each'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/system.rb:110:in `all_plugins'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/system.rb:108:in `each'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/system.rb:108:in `all_plugins'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/client.rb:208:in `run_ohai'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/client.rb:149:in `run'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/application/client.rb:239:in `run_application'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/application/client.rb:229:in `loop'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/application/client.rb:229:in `run_application'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/application.rb:67:in `run'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/chef-client:26
+/usr/bin/chef-client:19:in `load'
+/usr/bin/chef-client:19
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: Loading plugin uptime
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: Loading plugin ohai
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: Loading plugin php
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: Plugin php threw exception #<Ohai::Exceptions::Exec: command php -v doesn't exist or is not in the PATH> /usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/mixin/command.rb:312:in `popen4'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/mixin/command.rb:97:in `run_command_backend'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/mixin/command.rb:49:in `run_command'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/mixin/command.rb:48:in `chdir'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/mixin/command.rb:48:in `run_command'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/plugins/php.rb:27:in `from_file'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/system.rb:190:in `require_plugin'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/system.rb:185:in `each'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/system.rb:185:in `require_plugin'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/system.rb:117:in `all_plugins'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/system.rb:110:in `each'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/system.rb:110:in `all_plugins'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/system.rb:108:in `each'
+/usr/lib/ruby/gems/1.8/gems/ohai-0.6.4/lib/ohai/system.rb:108:in `all_plugins'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/client.rb:208:in `run_ohai'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/client.rb:149:in `run'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/application/client.rb:239:in `run_application'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/application/client.rb:229:in `loop'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/application/client.rb:229:in `run_application'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/application.rb:67:in `run'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/chef-client:26
+/usr/bin/chef-client:19:in `load'
+/usr/bin/chef-client:19
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: Loading plugin command
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: Loading plugin linux::filesystem
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: Loading plugin linux::block_device
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: Loading plugin linux::ssh_host_key
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: Loading plugin linux::ps
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: Loading plugin linux::memory
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: Loading plugin linux::cpu
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: Loading plugin linux::kernel
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: ---- Begin uname -o STDOUT ----
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: GNU/Linux
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: ---- End uname -o STDOUT ----
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: ---- Begin uname -o STDERR ----
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: 
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: ---- End uname -o STDERR ----
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: Ran  (uname -o) returned 0
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: Loading plugin linux::uptime
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: Client key /home/ubuntu/.chef/ubuntu.pem is present - skipping registration
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: Building node object for ubuntu
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: Signing the request as ubuntu
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: String to sign: 'Method:GET
+Hashed Path:4dME8GlmoxzBF8reOLrsMI7p1sY=
+X-Ops-Content-Hash:2jmj7l5rSw0yVb/vlWAYkK/YBwk=
+X-Ops-Timestamp:2011-09-28T22:56:13Z
+X-Ops-UserId:ubuntu'
+Header hash: {"X-Ops-Content-Hash"=>"2jmj7l5rSw0yVb/vlWAYkK/YBwk=", "X-Ops-Authorization-1"=>"QZEB74PX0qGllmewzGmMWiQk969OsmC21kRIptVb7ueSONlaYbmxCzBIMg6D", "X-Ops-Userid"=>"ubuntu", "X-Ops-Sign"=>"version=1.0", "X-Ops-Authorization-2"=>"g7tYXOC7WJj0PoDuLxP4V+onbKtl1jRjKKfc0ewh4atFOIkvehlUuxC3X95E", "X-Ops-Authorization-3"=>"om/UDaij2vAk9IKb56yvDOsPOVEWLaWHt9xR1ji8G+CQjoPqRbStegC/RO93", "X-Ops-Authorization-4"=>"ZSqCLzlNIvsJbxA8HfcnL20ufQHw2chbzDZQHzenxvYlqQFUlBRXj73MgRzh", "X-Ops-Authorization-5"=>"GLbyWj/Rj3oBtR0OHUEsJGbi1gI3RhY58W6xBy1fDsl67vO3TsMmJsG1YF2/", "X-Ops-Authorization-6"=>"WtFgi8o8BvuThYyx0Ca0j6o713ljxb8mQL1swIVrWg==", "X-Ops-Timestamp"=>"2011-09-28T22:56:13Z"}
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: Sending HTTP Request via GET to ip-10-114-233-127.ec2.internal:4000/nodes/ubuntu
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: Extracting run list from JSON attributes provided on command line
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: Applying attributes from json file
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: Platform is ubuntu version 10.04
+[Wed, 28 Sep 2011 22:56:13 +0000] INFO: Run List is [recipe[test]]
+[Wed, 28 Sep 2011 22:56:13 +0000] INFO: Run List expands to [test]
+[Wed, 28 Sep 2011 22:56:13 +0000] INFO: Starting Chef Run for ubuntu
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: Synchronizing cookbooks
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: Signing the request as ubuntu
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: String to sign: 'Method:POST
+Hashed Path:zXHyJOjo6pCoVGEbbPQWMq1P1mY=
+X-Ops-Content-Hash:FAwXOdZKikahLDX44u2avwgdqmI=
+X-Ops-Timestamp:2011-09-28T22:56:13Z
+X-Ops-UserId:ubuntu'
+Header hash: {"X-Ops-Content-Hash"=>"FAwXOdZKikahLDX44u2avwgdqmI=", "X-Ops-Authorization-1"=>"UMS7wX4fJezstW6xyJmWaefvefUpnguTMgnJXOKsxWS02Ihvce6XRFhzw7my", "X-Ops-Userid"=>"ubuntu", "X-Ops-Sign"=>"version=1.0", "X-Ops-Authorization-2"=>"MfR2HS17sUpm7oe5LBcb1x6lb3z5fJAJ+CfJQUedp/G4VYv3kbe0elHqUkFe", "X-Ops-Authorization-3"=>"D4AAhsSaJty5cBtYmalM4M08ImcSTntXZ3e1hqZgAK5k2/UnlnSEg6vyxjhN", "X-Ops-Authorization-4"=>"DkEtRXkx+upvvirsSrHxZCxgOsvv9DzU/CgbAHs5HatCKGgifBjn1lp7DAjR", "X-Ops-Authorization-5"=>"mI4efUxCGmL0g0RDJR8f2SbYqP27/vFjFlba3i/edKAuRipTdmke8f1K0qld", "X-Ops-Authorization-6"=>"H/zQlNmyt6BS1csnS03HtO6cebi4w6QD1CrpNLAprA==", "X-Ops-Timestamp"=>"2011-09-28T22:56:13Z"}
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: Sending HTTP Request via POST to ip-10-114-233-127.ec2.internal:4000/environments/_default/cookbook_versions
+[Wed, 28 Sep 2011 22:56:13 +0000] INFO: Loading cookbooks [test]
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: Cookbooks detail: {"test"=>#<Chef::CookbookVersion:0x7f594f003d68 @manifest_records_by_path={"recipes/default.rb"=>{"name"=>"default.rb", "url"=>"http://ip-10-114-233-127.ec2.internal:4000/cookbooks/test/0.0.1/files/dd1d5ed7ac15f533a24b47590bfc3be0", "checksum"=>"dd1d5ed7ac15f533a24b47590bfc3be0", "path"=>"recipes/default.rb", "specificity"=>"default"}, "attributes/test.rb"=>{"name"=>"test.rb", "url"=>"http://ip-10-114-233-127.ec2.internal:4000/cookbooks/test/0.0.1/files/5527dbd68166da471b36f5f67ee43540", "checksum"=>"5527dbd68166da471b36f5f67ee43540", "path"=>"attributes/test.rb", "specificity"=>"default"}, "metadata.rb"=>{"name"=>"metadata.rb", "url"=>"http://ip-10-114-233-127.ec2.internal:4000/cookbooks/test/0.0.1/files/5f12caea07a203ef7f20a339fc5cab22", "checksum"=>"5f12caea07a203ef7f20a339fc5cab22", "path"=>"metadata.rb", "specificity"=>"default"}, "README.rdoc"=>{"name"=>"README.rdoc", "url"=>"http://ip-10-114-233-127.ec2.internal:4000/cookbooks/test/0.0.1/files/afd05a88c6da55ac7177992a431e504a", "checksum"=>"afd05a88c6da55ac7177992a431e504a", "path"=>"README.rdoc", "specificity"=>"default"}}, @provider_filenames=[], @recipe_filenames=["default.rb"], @name="test", @file_vendor=nil, @manifest={"name"=>"test-0.0.1", "definitions"=>[], "json_class"=>"Chef::CookbookVersion", "files"=>[], "attributes"=>[{"name"=>"test.rb", "url"=>"http://ip-10-114-233-127.ec2.internal:4000/cookbooks/test/0.0.1/files/5527dbd68166da471b36f5f67ee43540", "checksum"=>"5527dbd68166da471b36f5f67ee43540", "path"=>"attributes/test.rb", "specificity"=>"default"}], "metadata"=>{"dependencies"=>{}, "name"=>"test", "maintainer_email"=>"YOUR_EMAIL", "attributes"=>{}, "license"=>"All rights reserved", "suggestions"=>{}, "platforms"=>{}, "maintainer"=>"YOUR_COMPANY_NAME", "long_description"=>"= DESCRIPTION:\n\n= REQUIREMENTS:\n\n= ATTRIBUTES:\n\n= USAGE:\n\n", "version"=>"0.0.1", "recommendations"=>{}, "recipes"=>{"test"=>""}, "groupings"=>{}, "conflicting"=>{}, "replacing"=>{}, "description"=>"Installs/Configures test", "providing"=>{"test"=>">= 0.0.0"}}, "providers"=>[], "cookbook_name"=>"test", "templates"=>[], "libraries"=>[], "resources"=>[], "version"=>"0.0.1", "recipes"=>[{"name"=>"default.rb", "url"=>"http://ip-10-114-233-127.ec2.internal:4000/cookbooks/test/0.0.1/files/dd1d5ed7ac15f533a24b47590bfc3be0", "checksum"=>"dd1d5ed7ac15f533a24b47590bfc3be0", "path"=>"recipes/default.rb", "specificity"=>"default"}], "root_files"=>[{"name"=>"README.rdoc", "url"=>"http://ip-10-114-233-127.ec2.internal:4000/cookbooks/test/0.0.1/files/afd05a88c6da55ac7177992a431e504a", "checksum"=>"afd05a88c6da55ac7177992a431e504a", "path"=>"README.rdoc", "specificity"=>"default"}, {"name"=>"metadata.rb", "url"=>"http://ip-10-114-233-127.ec2.internal:4000/cookbooks/test/0.0.1/files/5f12caea07a203ef7f20a339fc5cab22", "checksum"=>"5f12caea07a203ef7f20a339fc5cab22", "path"=>"metadata.rb", "specificity"=>"default"}], "frozen?"=>false, "chef_type"=>"cookbook_version"}, @couchdb_rev=nil, @attribute_filenames=["test.rb"], @status=:ready, @resource_filenames=[], @file_filenames=[], @root_filenames=["README.rdoc", "metadata.rb"], @frozen=false, @checksums={"5f12caea07a203ef7f20a339fc5cab22"=>nil, "dd1d5ed7ac15f533a24b47590bfc3be0"=>nil, "afd05a88c6da55ac7177992a431e504a"=>nil, "5527dbd68166da471b36f5f67ee43540"=>nil}, @library_filenames=[], @attribute_filenames_by_short_filename={"test"=>"test.rb"}, @couchdb=#<Chef::CouchDB:0x7f594f003b38 @db="chef", @rest=#<Chef::REST:0x7f594f003ae8 @sign_on_redirect=true, @redirect_limit=10, @redirects_followed=0, @auth_credentials=#<Chef::REST::AuthCredentials:0x7f594f003a48 @client_name=nil, @key_file=nil>, @cookies={}, @sign_request=true, @default_headers={}, @url="http://localhost:5984">>, @template_filenames=[], @root_dir=nil, @metadata_filenames=[], @recipe_filenames_by_name={"default"=>"default.rb"}, @metadata=#<Chef::Cookbook::Metadata:0x7f594f002cd8 @providing={"test"=>">= 0.0.0"}, @version="0.0.1", @description="Installs/Configures test", @long_description="= DESCRIPTION:\n\n= REQUIREMENTS:\n\n= ATTRIBUTES:\n\n= USAGE:\n\n", @name="test", @attributes={}, @dependencies={}, @conflicting={}, @platforms={}, @license="All rights reserved", @maintainer_email="YOUR_EMAIL", @groupings={}, @suggestions={}, @recipes={"test"=>""}, @maintainer="YOUR_COMPANY_NAME", @replacing={}, @recommendations={}, @cookbook=nil>, @couchdb_id=nil, @definition_filenames=[]>}
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: Synchronizing cookbook test
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: Not storing cookbooks/test/recipes/default.rb, as the cache is up to date.
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: Signing the request as ubuntu
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: String to sign: 'Method:GET
+Hashed Path:b330EWtSvoRvlS14PXEPcENR8Bw=
+X-Ops-Content-Hash:2jmj7l5rSw0yVb/vlWAYkK/YBwk=
+X-Ops-Timestamp:2011-09-28T22:56:13Z
+X-Ops-UserId:ubuntu'
+Header hash: {"X-Ops-Content-Hash"=>"2jmj7l5rSw0yVb/vlWAYkK/YBwk=", "X-Ops-Authorization-1"=>"vDk2kqSVNTKkcMFAKQMv7v/P34Zmnw49NYkehFzSjWWQhMA2DUUwjmip0f+9", "X-Ops-Userid"=>"ubuntu", "X-Ops-Sign"=>"version=1.0", "X-Ops-Authorization-2"=>"8QeeUpNag7vuJTdWj5fmkrydSpES3KMfi1SD7BL0sWpg9U5hmPZsHH1B6m8b", "X-Ops-Authorization-3"=>"UVsxJNBfDPbvB1jojzwuWI4H8kisXUKy5wSWgGK7FxWwqPLdI+pl/EHm6vzV", "X-Ops-Authorization-4"=>"T7BOIvtFf5qSfkY4BhM0q3fthZsaEAwjYQmfgOzZ7qsYJvriCkkRfSFy2GpV", "X-Ops-Authorization-5"=>"bpG/VfhhU2QxcHUkokiK3m6XzDPiKsTX4/iDm7epmDJA95b5L6uVMHKYw5Le", "X-Ops-Authorization-6"=>"KvytUuRcE7o6wGumsuXeHfiTo9ppYOJwN2y6CZBiiw==", "X-Ops-Timestamp"=>"2011-09-28T22:56:13Z"}
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: Sending HTTP Request via GET to ip-10-114-233-127.ec2.internal:4000/cookbooks/test/0.0.1/files/5527dbd68166da471b36f5f67ee43540
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: Streaming download from http://ip-10-114-233-127.ec2.internal:4000/cookbooks/test/0.0.1/files/5527dbd68166da471b36f5f67ee43540 to tempfile /tmp/chef-rest20110928-6254-fz0rwq-0
+[Wed, 28 Sep 2011 22:56:13 +0000] INFO: Storing updated cookbooks/test/attributes/test.rb in the cache.
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: Not storing cookbooks/test/README.rdoc, as the cache is up to date.
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: Not storing cookbooks/test/metadata.rb, as the cache is up to date.
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: Node ubuntu loading cookbook test's attribute file /var/chef/cache/cookbooks/test/attributes/test.rb
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: Loading Recipe test via include_recipe
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: Found recipe default in cookbook test
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: Converging node ubuntu
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: Processing template[/tmp/test_file.txt] on ubuntu
+[Wed, 28 Sep 2011 22:56:13 +0000] INFO: Processing template[/tmp/test_file.txt] action create (test::default line 10)
+[Wed, 28 Sep 2011 22:56:13 +0000] ERROR: template[/tmp/test_file.txt] (test::default line 10) has had an error
+[Wed, 28 Sep 2011 22:56:13 +0000] ERROR: template[/tmp/test_file.txt] (/var/chef/cache/cookbooks/test/recipes/default.rb:10:in `from_file') had an error:
+template[/tmp/test_file.txt] (test::default line 10) had an error: cookbook test does not contain file templates/test_file.txt.erb
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/cookbook_version.rb:633:in `preferred_manifest_record'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/cookbook_version.rb:638:in `preferred_filename_on_disk_location'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/provider/template.rb:68:in `template_location'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/provider/template.rb:39:in `action_create'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/resource.rb:437:in `send'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/resource.rb:437:in `run_action'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/runner.rb:45:in `run_action'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/runner.rb:81:in `converge'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/runner.rb:81:in `each'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/runner.rb:81:in `converge'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/resource_collection.rb:94
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/resource_collection/stepable_iterator.rb:116:in `call'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/resource_collection/stepable_iterator.rb:116:in `call_iterator_block'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/resource_collection/stepable_iterator.rb:85:in `step'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/resource_collection/stepable_iterator.rb:104:in `iterate'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/resource_collection/stepable_iterator.rb:55:in `each_with_index'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/resource_collection.rb:92:in `execute_each_resource'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/runner.rb:76:in `converge'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/client.rb:312:in `converge'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/client.rb:160:in `run'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/application/client.rb:239:in `run_application'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/application/client.rb:229:in `loop'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/application/client.rb:229:in `run_application'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/application.rb:67:in `run'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/chef-client:26
+/usr/bin/chef-client:19:in `load'
+/usr/bin/chef-client:19
+[Wed, 28 Sep 2011 22:56:13 +0000] ERROR: Running exception handlers
+[Wed, 28 Sep 2011 22:56:13 +0000] FATAL: Saving node information to /var/chef/cache/failed-run-data.json
+[Wed, 28 Sep 2011 22:56:13 +0000] ERROR: Exception handlers complete
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: Re-raising exception: Chef::Exceptions::FileNotFound - template[/tmp/test_file.txt] (test::default line 10) had an error: cookbook test does not contain file templates/test_file.txt.erb
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/cookbook_version.rb:633:in `preferred_manifest_record'
+  /usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/cookbook_version.rb:638:in `preferred_filename_on_disk_location'
+  /usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/provider/template.rb:68:in `template_location'
+  /usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/provider/template.rb:39:in `action_create'
+  /usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/resource.rb:437:in `send'
+  /usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/resource.rb:437:in `run_action'
+  /usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/runner.rb:45:in `run_action'
+  /usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/runner.rb:81:in `converge'
+  /usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/runner.rb:81:in `each'
+  /usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/runner.rb:81:in `converge'
+  /usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/resource_collection.rb:94
+  /usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/resource_collection/stepable_iterator.rb:116:in `call'
+  /usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/resource_collection/stepable_iterator.rb:116:in `call_iterator_block'
+  /usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/resource_collection/stepable_iterator.rb:85:in `step'
+  /usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/resource_collection/stepable_iterator.rb:104:in `iterate'
+  /usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/resource_collection/stepable_iterator.rb:55:in `each_with_index'
+  /usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/resource_collection.rb:92:in `execute_each_resource'
+  /usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/runner.rb:76:in `converge'
+  /usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/client.rb:312:in `converge'
+  /usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/client.rb:160:in `run'
+  /usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/application/client.rb:239:in `run_application'
+  /usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/application/client.rb:229:in `loop'
+  /usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/application/client.rb:229:in `run_application'
+  /usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/application.rb:67:in `run'
+  /usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/chef-client:26
+  /usr/bin/chef-client:19:in `load'
+  /usr/bin/chef-client:19
+[Wed, 28 Sep 2011 22:56:13 +0000] FATAL: Stacktrace dumped to /var/chef/cache/chef-stacktrace.out
+[Wed, 28 Sep 2011 22:56:13 +0000] DEBUG: Chef::Exceptions::FileNotFound: template[/tmp/test_file.txt] (test::default line 10) had an error: cookbook test does not contain file templates/test_file.txt.erb
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/cookbook_version.rb:633:in `preferred_manifest_record'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/cookbook_version.rb:638:in `preferred_filename_on_disk_location'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/provider/template.rb:68:in `template_location'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/provider/template.rb:39:in `action_create'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/resource.rb:437:in `send'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/resource.rb:437:in `run_action'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/runner.rb:45:in `run_action'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/runner.rb:81:in `converge'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/runner.rb:81:in `each'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/runner.rb:81:in `converge'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/resource_collection.rb:94
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/resource_collection/stepable_iterator.rb:116:in `call'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/resource_collection/stepable_iterator.rb:116:in `call_iterator_block'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/resource_collection/stepable_iterator.rb:85:in `step'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/resource_collection/stepable_iterator.rb:104:in `iterate'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/resource_collection/stepable_iterator.rb:55:in `each_with_index'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/resource_collection.rb:92:in `execute_each_resource'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/runner.rb:76:in `converge'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/client.rb:312:in `converge'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/client.rb:160:in `run'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/application/client.rb:239:in `run_application'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/application/client.rb:229:in `loop'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/application/client.rb:229:in `run_application'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/application.rb:67:in `run'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/chef-client:26
+/usr/bin/chef-client:19:in `load'
+/usr/bin/chef-client:19
+[Wed, 28 Sep 2011 22:56:13 +0000] FATAL: Chef::Exceptions::FileNotFound: template[/tmp/test_file.txt] (test::default line 10) had an error: cookbook test does not contain file templates/test_file.txt.erb
